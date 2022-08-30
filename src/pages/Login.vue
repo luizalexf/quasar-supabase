@@ -73,7 +73,8 @@ export default defineComponent({
       password: ''
     })
 
-    // Força a página de login se usuário logado
+    // Força a página de login se usuário logado, regra criada em 30/ago.
+    
     onMounted(() => {
       if (isLoggedIn) {
         router.push({ name: 'me' })
